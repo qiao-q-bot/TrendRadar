@@ -46,7 +46,9 @@ concurrency:
 permissions:
   contents: read
   actions: write
-
+push:           # ← 临时加这几行
+    branches:
+      - main
 jobs:
   crawl:
     runs-on: ubuntu-latest
